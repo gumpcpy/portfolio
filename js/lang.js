@@ -1,9 +1,9 @@
 const translations = {
     zh: {
       title: "個人展示網站",
-      header-title: "你好，我是Gump",
-      about-me: "關於我",
-      about-text: "我是來自台灣、在北京工作的創意技術人...",
+      headerTitle: "你好，我是Gump",
+      aboutMe: "關於我",
+      aboutText: "我是來自台灣、在北京工作的創意技術人...",
       projects: "專案展示",
       proj1: "AI 視覺分析系統",
       proj2: "影片調色自動化流程",
@@ -11,9 +11,9 @@ const translations = {
     },
     en: {
       title: "Portfolio Website",
-      header-title: "Hi, I'm Gump",
-      about-me: "About Me",
-      about-text: "I'm a creative technologist from Taiwan, based in Beijing...",
+      headerTitle: "Hi, I'm Gump",
+      aboutMe: "About Me",
+      aboutText: "I'm a creative technologist from Taiwan, based in Beijing...",
       projects: "Projects",
       proj1: "AI Vision Tool",
       proj2: "Auto Color Grading",
