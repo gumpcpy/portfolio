@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Coursera Learning Journey</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .certificate-container {
@@ -84,7 +85,57 @@
                 margin-top: 20px;
             }
         }
+
+        /* 浮动按钮样式 */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .floating-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .floating-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .floating-button i {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            .floating-button {
+                width: 45px;
+                height: 45px;
+            }
+        }
     </style>
+    <!-- 添加Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="certificate-container">
@@ -295,6 +346,15 @@
         
 
         
+    </div>
+    <!-- 添加浮动按钮 -->
+    <div class="floating-buttons">
+        <a href="../index.html" class="floating-button" title="返回首页">
+            <i class="fas fa-home"></i>
+        </a>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="floating-button" title="回到顶部">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
 </body>
 </html>
